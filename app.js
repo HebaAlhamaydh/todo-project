@@ -30,15 +30,15 @@ function validationInput(inputUser)
 {
    let resultInput;
 
-   if(inputUser!="Yes" && inputUser!="No"){
-    resultInput="invalid";
      
-    }
-    else if (inputUser=="Yes") {
+    if (inputUser=="Yes") {
          resultInput="Yes";
    }
    else if(inputUser=="No")
    {   resultInput="No";}
+   else
+    resultInput="invalid"; 
+
    return resultInput;
 }
 
